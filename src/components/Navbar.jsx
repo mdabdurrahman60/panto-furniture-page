@@ -35,9 +35,8 @@ const Navbar = () => {
     const toggleMenu = () =>{
         setIsMenuOpen(prevState => !prevState)
     }
-    
     return (
-        <header>
+        <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out text-white`}>
             <nav className=" max-w screen-2xl container mx-auto flex justify-between items-center py-6 px-4">
                 {/* Logo */}
                 <Link to="/" className="font-bold">Logo</Link>
